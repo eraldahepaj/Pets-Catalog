@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Photo Catalog</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#about" data-section="about">About Us</a></li>
+                <li><a href="#contact" data-section="contact">Contact Us</a></li>
+                <li class="dropdown">
+                    <a href="#animals" class="dropbtn" data-section="animals">Animals</a>
+                    
+                    
+            
+                    <div class="dropdown-content">
+                        <a href="#cats" data-section="cats">Cats</a>
+                        <a href="#dogs" data-section="dogs">Dogs</a>
+                        <a href="#birds" data-section="birds">Birds</a>
+                    </div>
+
+                    <li>
+                        <i class="fas fa-search" id="searchIcon"></i>
+                        <input type="text" id="searchInput" placeholder="Search for an animal...">
+                    </li>
+                </li>
+            </ul>
+            
+        </nav>
+
+        
+    </header>
+    
+    <section id="home" class="section hero-section">
+        <!-- No text content here --><h><b>"Animals make our <br> world a happier and<br> more beautiful place."</b></h>
+    </section>
+    
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Welcome to our animal catalog, a delightful showcase of the wonderful creatures that inhabit our world.<br> Here, you'll discover a diverse collection of animals, each with its own unique characteristics and charm.<br>
+
+            Our catalog aims to bring the beauty and majesty of wildlife closer to you, providing a glimpse into  the fascinating <br> lives of various species. Whether you're an animal enthusiast, a nature lover, or simply curious about the animal kingdom,<br>
+            
+            From majestic lions to graceful birds, from loyal dogs to playful cats, our catalog celebrates the richness of biodiversity on our planet.<br> 
+            
+            We invite you to explore our catalog. </p>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+    
+
+    <title>Cats Gallery</title>
+    
+    <style>
+       
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: calc(33% - 40px); /* Adjust card width as per layout needs */
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .card-info {
+            margin-top: 10px;
+        }
+        .more-text {
+            display: none;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+    <section id="cats" class="section">
+        <h2>Cats</h2>
+        <div class="gallery">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://www.zooplus.co.uk/magazine/wp-content/uploads/2019/03/maine-coon-cat-breed.jpg" alt="Cat 1">
+                <div class="card-info">
+                    <h3>Maine Coon</h3>
+                    <p>Origin:TU.S. state of Maine</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">The Maine Coon is a massive cat with a powerful muscular athletic body in keeping with their impressive size. They have large, pointed ears held wide and tall and an intelligent expression.  
+
+                        The coat is long and thick and consists of an undercoat covered by a substantial glossy.</p>
+                </div>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://www.catster.com/wp-content/uploads/2023/11/British-Shorthair-cat-kittens_Nynke-van-Holten_Shutterstock.jpg" alt="Cat 2">
+                <div class="card-info">
+                    <h3>British Shorthair</h3>
+                    <p>Origin:Britain</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">The British shorthair is possibly the oldest cat breed in Great Britain. The most agreed-upon theory of this breed’s development is that British shorthairs started out as shorthaired street cats, but breeders refined and standardized the cats, likely crossing them with Persians and Russian blues, until they resembled the British shorthair we know and love today.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://www.omlet.us/images/cache/1024/682/American-curl-shorthaired-cat-lying-facing-forward.jpg" alt="Cat 3">
+                <div class="card-info">
+                    <h3>American Curl</h3>
+                    <p>Origin:California</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">American Curls are friendly, affectionate, and active cats that are often said to have a somewhat "doglike" attachment to their owners. They like to gently poke and prod their humans with their paws and will often follow their favorite family members from room to room around the house.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://www.thesprucepets.com/thmb/nEXWyCADICCj4s71HQUw6to057w=/2121x0/filters:no_upscale():strip_icc()/GettyImages-1134664912-0bb52740ba744ce18800296f7497c0e1.jpg" alt="Cat 4">
+                <div class="card-info">
+                    <h3>Norwegian Forest </h3>
+                    <p>Origin:Norway</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">The Norwegian forest cat possesses a long, dense coat that helped their ancestors survive for centuries in the forests of Norway. Today, thees large felines are loving house cats—though they don't usually like laying in anyone's lap.</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="https://d3544la1u8djza.cloudfront.net/APHI/Blog/2024/January/munchkin-cat-breed.jpg" alt="Cat 5">
+                <div class="card-info">
+                    <h3>Munchkin cat</h3>
+                    <p>Origin:Rayville, Louisiana</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">Munchkin cats (also called “sausage cats”) are regular domestic cats that stand out because of their shortened legs, giving them a much smaller stature than other breeds. These shortened legs come from a naturally occurring mutation that can actually arise in any cat.</p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
+                <img src="https://marylandpet.com/wp-content/uploads/2020/08/American-Bobtail-Cat.jpg" alt="Cat 6">
+                <div class="card-info">
+                    <h3>American Bobtail</h3>
+                    <p>Origin:United States</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">American bobtails are ideal pets for just about anyone in any living situation. These sturdy, large cats adapt beautifully to family life with kids or other pets, but they also bond deeply with single humans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleReadMore(button) {
+            const cardInfo = button.parentElement;
+            const moreText = cardInfo.querySelector(".more-text");
+            
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                button.innerHTML = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                button.innerHTML = "Read More";
+            }
+        }
+    </script>
+
+    
+
+
+<title>Dogs Gallery</title>
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card {
+        border: 1px solid #ccc;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        width: calc(33% - 40px); /* Adjust card width as per layout needs */
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .card-info {
+        margin-top: 10px;
+    }
+    .more-text {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<section id="dogs" class="section">
+    <h2>Dogs</h2>
+    <div class="gallery">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://cdn.britannica.com/02/236302-050-E1F61BB1/Alaskan-Malamute-sled-dog.jpg" alt="Alaskan">
+            <div class="card-info">
+                <h3>Alaskan</h3>
+                <p>Origin:Alaska </p>
+                <p></p>
+                <button onclick="toggleReadMore(this)">Read More</button>
+                <p class="more-text">Alaskan Malamutes may be best known as sled dogs. But they're also adoring, playful animals. With the right training and socialization, the Malamute makes a great, hardworking family pet.Malamutes have thick, coarse coats that come in several different colors—including black and white, blue-gray and white, gray and white, red and white, sable and white, silver and white, agouti and white.</p>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://image.petmd.com/files/styles/863x625/public/2023-11/siberian-husky-winter.jpg" alt="Dog 2">
+            <div class="card-info">
+                <h3>Siberian Husky</h3>
+                <p>Origin:Northeast Asia</p>
+                <p></p>
+                <button onclick="toggleReadMore(this)">Read More</button>
+                <p class="more-text">The Siberian Husky arrived in North America in the fall of 1908 without fanfare. Most other dogs had taken the more conventional route to our shores across the Atlantic Ocean from countries where they had become well established breeds. This unknown breed of Northern dog, however, sneaked through a remote back door to America quietly..</p>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://image.petmd.com/files/styles/978x550/public/2023-01/toy-poodle.jpg" alt="Dog 3">
+            <div class="card-info">
+                <h3>Poodle</h3>
+                <p>Origin: Lorem Ipsum</p>
+                <p></p>
+                <button onclick="toggleReadMore(this)">Read More</button>
+                <p class="more-text">Poodles are notorious for their intelligence and ease of training. They are lively, active, fun-loving dogs with a sense of the ridiculous. Poodles thrive on attention and can develop bad habits such as nuisance barking if ignored or left alone.
+
+                    The smaller poodles can be aggressive to people outside their families or to other dogs. They should have early socialization to other people and pets and a firm hand in training. Poodles can be protective of their families and homes.</p>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bichon_Fris%C3%A9_-_studdogbichon.jpg/640px-Bichon_Fris%C3%A9_-_studdogbichon.jpg" alt="Dog 4">
+            <div class="card-info">
+                <h3>Bichon Frisé</h3>
+                <p>Origin:France-Belgium</p>
+                <p></p>
+                <button onclick="toggleReadMore(this)">Read More</button>
+                <p class="more-text">Bichon Frise, breed of small dog noted for its fluffy coat and cheerful disposition. For many centuries it was known as the “Bichon” or “Tenerife.” Descended from water spaniels, the breed is 9.5 to 11.5 inches (24 to 30 cm) tall at the withers and weighs 12 to 18 pounds (5 to 8 kg). It features a short blunt muzzle, silky ears that drop, and a puffy, silky, curled coat and an undercoat.</p>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/ChowChow2Szczecin.jpg/1200px-ChowChow2Szczecin.jpg" alt="Dog 5">
+            <div class="card-info">
+                <h3>Chow Chow</h3>
+                <p>Origin:Northern China</p>
+                <p></p>
+                <button onclick="toggleReadMore(this)">Read More</button>
+                <p class="more-text">Dog breeds from East Asia, including the Chow Chow, originated from Chinese indigenous dogs very early in time. The genetic bottleneck leading to Chow Chows and migrations with other populations are found to be quite mild. Our current study represents an early endeavor to characterize the origin of East Asian dog breeds and establishes an important reference point for understanding the origin of ancient breeds in Asia.</p>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="https://www.dailypaws.com/thmb/6-5GaGzwlwC7OjwlUnt2nrPypeI=/1500x0/filters:no_upscale():max_bytes(150001):strip_icc()/maltipoo-on-table-390083464-2000-4484ee5f277149e6a59b20870efe1312.jpg" alt="Dog 6">
+            <div class="card-info">
+                <h3>Maltipoo</h3>
+                <p>Origin:Island of Malta</p>
+                <p></p>
+                <button onclick="toggleReadMore(this)">Read More</button>
+                <p class="more-text">Maltipoos can vary in size, shape, coat types and temperaments, depending on how they have been bred, but in all cases this is a small companion dog. The Maltipoo can be a first cross (with one Maltese and one Poodle parent, they can be bred back to one of the original breeds</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function toggleReadMore(button) {
+        const cardInfo = button.parentElement;
+        const moreText = cardInfo.querySelector(".more-text");
+        
+        if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            button.innerHTML = "Read Less";
+        } else {
+            moreText.style.display = "none";
+            button.innerHTML = "Read More";
+        }
+    }
+</script>
+
+
+
+
+<title>Birds Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: calc(33% - 40px); /* Adjust card width as per layout needs */
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .card-info {
+            margin-top: 10px;
+        }
+        .more-text {
+            display: none;
+        }
+    </style>
+</head>
+
+    <section id="birds" class="section">
+        <h2>Birds</h2>
+        <div class="gallery">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://wallpaperset.com/w/full/b/b/d/455746.jpg" alt="Bird 1">
+                <div class="card-info">
+                    <h3>Parrot</h3>
+                    <p>Origin:New Zeland</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">Parrots were domesticated by the ancient Romans and kept as pets as far back as 5000 years ago in Brazil. Parrots first appeared in Europe in 327 B.C. when Alexander the Great conquered India and took Ring-neck (Rose-ringed) Parrots and their cousin the Alexandrine Parrot, back to Greece</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8TYP8SjlUgAEiJs1OYXl6gZtXZP320cBbiw&s" alt="Bird 2">
+                <div class="card-info">
+                    <h3>Blue Jay</h3>
+                    <p>Origin:North America</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">Blue Jays make a large variety of calls that carry long distances. Most calls produced while the jay is perched within a tree. Usually flies across open areas silently, especially during migration. Stuffs food items in throat pouch to cache elsewhere.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://indianaaudubon.org/wp-content/uploads/2016/04/EasternBluebird-pair.jpg" alt="Bird 3">
+                <div class="card-info">
+                    <h3>Blue Bird</h3>
+                    <p>Origin:Canada</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">Marvelous birds to capture in your binoculars, male Eastern Bluebirds are a brilliant royal blue on the back and head, and warm red-brown on the breast. Blue tinges in the wings and tail give the grayer females an elegant look.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%BB%D0%B0%D1%81%D1%82%D0%BE%D1%87%D0%BA%D0%B0_%28Hirundo_rustica%29%2C_%D0%9C%D0%B5%D0%BB%D0%B8%D1%85%D0%BE%D0%B2%D0%BE.jpg/1200px-%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%BB%D0%B0%D1%81%D1%82%D0%BE%D1%87%D0%BA%D0%B0_%28Hirundo_rustica%29%2C_%D0%9C%D0%B5%D0%BB%D0%B8%D1%85%D0%BE%D0%B2%D0%BE.jpg" alt="Bird 4">
+                <div class="card-info">
+                    <h3>Barn swallow</h3>
+                    <p>Origin: North America</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">The barn swallow is about six inches in length and has a slate-blue head and wings. It has a rusty-orange throat and forehead and a pale orange chest and underside. </p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoVFxTDungiXvL98rY18CfUX-HMT6iQZlbA&s" alt="Bird 5">
+                <div class="card-info">
+                    <h3>Kingfisher</h3>
+                    <p>Origin:India</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text">Kingfishers have to be one of the more beautifully coloured birds in Europe,. The Europeans in their bright blue/green iridescent plumage and orange breast would make one think that they are easily seen along the bank of a river or pond. </p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
+                <img src="https://zooatlanta.org/wp-content/uploads/whitestork_betty_ZA_9139.jpg" alt="Bird 6">
+                <div class="card-info">
+                    <h3>Stork</h3>
+                    <p>Origin:Africa</p>
+                    <p></p>
+                    <button onclick="toggleReadMore(this)">Read More</button>
+                    <p class="more-text"> Storks range from about 60 cm to more than 150 cm  in height. All or part of the head and upper neck may be bare of feathers and brightly coloured.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleReadMore(button) {
+            const cardInfo = button.parentElement;
+            const moreText = cardInfo.querySelector(".more-text");
+            
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                button.innerHTML = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                button.innerHTML = "Read More";
+            }
+        }
+    </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="scriptt.js"></script>
+   
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll('nav a[data-section]');
+            const sections = document.querySelectorAll('.section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    
+                    const sectionToShow = event.target.getAttribute('data-section');
+                    
+                    // Hide all sections
+                    sections.forEach(section => {
+                        section.style.display = 'none';
+                    });
+                    
+                    // Show the selected section
+                    document.getElementById(sectionToShow).style.display = 'block';
+                    
+                    // If the selected section is "dogs", fetch dog images
+                    if (sectionToShow === 'dogs') {
+                        fetchDogs();
+                    }
+                });
+            });
+
+            // Initially show the home section
+            document.getElementById('home').style.display = 'block';
+
+            // Function to fetch dog images
+            function fetchDogs() {
+                const apiUrl = 'https://your-dogs-api.com/api/dogs'; // Replace with your actual API endpoint URL
+
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        displayDogImages(data);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching dog data:', error);
+                    });
+            }
+
+            // Function to display dog images in the gallery
+            function displayDogImages(dogs) {
+                const gallery = document.querySelector('#dogs .gallery');
+                gallery.innerHTML = ''; // Clear previous images
+                
+                // Displaying 6 dogs in two rows of three
+                for (let i = 0; i < 6; i++) {
+                    const img = document.createElement('img');
+                    img.src = dogs[i].imageUrl; // Assuming the API response has an "imageUrl" field
+                    img.alt = dogs[i].name; // Assuming the API response has a "name" field
+
+                    gallery.appendChild(img);
+                }
+            }
+        });
+    
+
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchInput = document.getElementById("searchInput");
+
+            searchInput.addEventListener("input", () => {
+                const query = searchInput.value.toLowerCase();
+                const sections = document.querySelectorAll(".section");
+                let found = false;
+
+                sections.forEach(section => {
+                    const cards = section.querySelectorAll(".card");
+
+                    cards.forEach(card => {
+                        const animalName = card.querySelector("h3").textContent.toLowerCase();
+                        if (animalName.includes(query)) {
+                            card.style.display = "block";
+                            section.style.display = "block";
+                            found = true;
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+
+                    if (!found) {
+                        section.style.display = "none";
+                    }
+                });
+
+                if (query === "") {
+                    sections.forEach(section => section.style.display = "none");
+                }
+            });
+        });
+</script>
+</body>
+</html>
